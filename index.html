@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brushable Scatter Plot Matrix</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>Brushable Scatter Plot Matrix</h1>
+        <!-- class and color -->
+        <div class="color-legend">
+            <div class="legend-item">
+                <div class="color-box" style="background-color: red;"></div>
+                <div>Iris-setosa</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-box" style="background-color: green;"></div>
+                <div>Iris-versicolor</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-box" style="background-color: blue;"></div>
+                <div>Iris-virginica</div>
+            </div>
+        </div>
+        <div class="color-legend">Touch or click on the points with your mouse to get more information.</div>
+
+        <!-- scatter plots -->
+        <svg class="scatter-plot" id="plot"></svg>
+
+        <script src="scatterplot.js"></script>
+    </body>
+</html>
