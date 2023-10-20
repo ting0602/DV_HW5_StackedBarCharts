@@ -3,32 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brushable Scatter Plot Matrix</title>
+        <title>Stacked Bar Charts</title>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <h1>Brushable Scatter Plot Matrix</h1>
-        <!-- class and color -->
-        <div class="color-legend">
-            <div class="legend-item">
-                <div class="color-box" style="background-color: red;"></div>
-                <div>Iris-setosa</div>
-            </div>
-            <div class="legend-item">
-                <div class="color-box" style="background-color: green;"></div>
-                <div>Iris-versicolor</div>
-            </div>
-            <div class="legend-item">
-                <div class="color-box" style="background-color: blue;"></div>
-                <div>Iris-virginica</div>
-            </div>
-        </div>
-        <div class="color-legend">Touch or click on the points with your mouse to get more information.</div>
+        <h1>Stacked Bar Charts</h1>
+        <label for="criteria">Select criteria:</label><br>
+        <input type="checkbox" id="scores_teaching" name="criteria" value="scores_teaching" checked>
+        <label for="scores_teaching">Teaching</label><br>
+        <input type="checkbox" id="scores_research" name="criteria" value="scores_research" checked>
+        <label for="scores_research">Research</label><br>
+        <input type="checkbox" id="scores_citations" name="criteria" value="scores_citations" checked>
+        <label for="scores_citations">Citations</label><br>
+        <input type="checkbox" id="scores_industry_income" name="criteria" value="scores_industry_income" checked>
+        <label for="scores_industry_income">Industry Income</label><br>
+        <input type="checkbox" id="scores_international_outlook" name="criteria" value="scores_international_outlook" checked>
+        <label for="scores_international_outlook">International Outlook</label><br>
+        
+        
+        <label for="sortOrder">Order:</label>
+        <select id="sortOrder">
+            <option value="descending" selected>Descending</option>
+            <option value="ascending">Ascending</option>
+        </select><br>
+        <label for="schoolNum">School number:</label>
+        <input type="number" id="schoolNum" min="1" max="1904" value="100">
+        <svg class="stack-bar" id="bar"></svg>
 
-        <!-- scatter plots -->
-        <svg class="scatter-plot" id="plot"></svg>
-
-        <script src="scatterplot.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
