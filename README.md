@@ -9,7 +9,7 @@ iris dataset: http://vis.lab.djosix.com:2023/data/iris.csv
 ## Usage
 ### 1. Clone Repository
 ```
-git clone git@github.com:ting0602/HW4_BrushableScatterPlotMatrix.git
+git clone https://github.com/ting0602/HW5_StackedBarCharts.git
 ```
 ### 2. Open File (index.html)
 Touch or click on the points with your mouse to get more information.
